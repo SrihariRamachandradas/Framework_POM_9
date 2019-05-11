@@ -1,11 +1,8 @@
 import pytest
-import os
 from testdata import data as data
-
 
 def pytest_addoption(parser):
     parser.addoption('--browser', action='store', default='chrome', help='test help')
-
 
 @pytest.fixture(scope='class')
 def test_setup(request):
@@ -22,3 +19,5 @@ def test_setup(request):
     request.cls.driver = driver
     yield
     driver.quit()
+
+
