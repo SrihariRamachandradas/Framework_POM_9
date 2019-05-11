@@ -1,7 +1,6 @@
 from pages.locgeneric import LocGeneric
 import allure
 
-
 class WebGeneric(LocGeneric):
     def __init__(self, driver):
         LocGeneric.__init__(self, driver)

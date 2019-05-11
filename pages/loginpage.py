@@ -1,7 +1,6 @@
 from pages.webgeneric import WebGeneric
 from testdata.ExcelUtil import *
 
-
 class LoginPage(WebGeneric):
     def __init__(self, driver):
         WebGeneric.__init__(self, driver)

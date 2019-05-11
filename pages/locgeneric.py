@@ -39,3 +39,5 @@ class LocGeneric:
     def report_fail(self):
         self.get_screenshot()
 
+
+
